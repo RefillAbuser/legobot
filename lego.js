@@ -7,7 +7,7 @@ lego.on('ready', () => {
 });
 
 // Prefix settings
-bot.on('message', message => {
+lego.on('message', message => {
  if(message.author.bot) return;
  if(!message.content.startsWith(config.prefix)) return;
 
