@@ -6,8 +6,7 @@ lego.on('ready', () => {
   console.log(`Logged in as ${lego.user.tag}!`);
 
 bot.user.setPresence({game: {name: 'worthless bot', type:0 } });
-});
-});
+
 // Prefix settings
 lego.on('message', message => {
  if(message.author.bot) return;
