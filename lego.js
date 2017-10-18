@@ -6,7 +6,7 @@ lego.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-bot.user.setPresence({game: {name: 'a bot that gives no fucks', type:0 } });
+lego.user.setPresence({game: {name: 'a bot that gives no fucks', type:0 } });
 
 // Prefix settings
 bot.on('message', message => {
