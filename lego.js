@@ -15,12 +15,9 @@ lego.on('message', message => {
  command = command.slice(config.prefix.length);
  let args = message.content.split(" ").slice(1);
  // list of shit
-  
  if (command === "say") {
    message.channel.sendMessage(args.join(" "));
  }
-
   
 });
-
 lego.login(process.env.BOT_TOKEN);
