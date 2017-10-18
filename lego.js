@@ -3,7 +3,7 @@ const lego = new Discord.Client();
 const config = require("./config.json");
 
 lego.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`Logged in as ${lego.user.tag}!`);
 });
 
 // Prefix settings
