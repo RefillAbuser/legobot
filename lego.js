@@ -2,12 +2,15 @@
 const Discord = require("discord.js");
 const lego = new Discord.Client();
 const config = require("./config.json");
+
  // Ready notification
 lego.on('ready', () => {
  console.log(`Logged in as ${lego.user.tag}!`);
+ 
 // Shows what the bot is playing
 lego.user.setPresence({game: {name: '| prefix: !h | Worthless bot |', type:0 } });
 });
+
 // Prefix settings
 lego.on('message', message => {
  if(message.author.bot) return;
