@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const lego = new Discord.Client();
 
-lego.login(process.env.BOT_TOKEN);
+lego.login(BOT_TOKEN);
 
 lego.on('message', message => {
   if (!message.guild) return;
