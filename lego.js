@@ -23,7 +23,7 @@ lego.on('message', message => {
  // list of shit
  
  if (command === "h") {
-   message.channel.sendMessage("say | Adding more to this bot soon! |");
+   message.channel.sendMessage("+say | Adding more to this bot soon! |");
  }
  
  if (command === "say") {
