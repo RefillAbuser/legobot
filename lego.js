@@ -6,7 +6,7 @@ const config = require("./config.json");
 lego.on('ready', () => {
  console.log(`Logged in as ${lego.user.tag}!`);
 // Shows what the bot is playing
-bot.user.setPresence({game: {name: 'Worthless bot', type:0 } });
+lego.user.setPresence({game: {name: 'Worthless bot', type:0 } });
 });
 // Prefix settings
 lego.on('message', message => {
