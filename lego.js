@@ -14,8 +14,8 @@ lego.on('message', message => {
  let command = message.content.split(" ")[0];
  command = command.slice(config.prefix.length);
  let args = message.content.split(" ").slice(1);
-  
  // list of shit
+  
  if (command === "say") {
    message.channel.sendMessage(args.join(" "));
  }
