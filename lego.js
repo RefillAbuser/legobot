@@ -6,7 +6,7 @@ const config = require("./config.json");
 lego.on('ready', () => {
  console.log(`Logged in as ${lego.user.tag}!`);
 // Shows what the bot is playing
-lego.user.setPresence({game: {name: 'Worthless bot', type:0 } });
+lego.user.setPresence({game: {name: '| prefix: !h | Worthless bot |', type:0 } });
 });
 // Prefix settings
 lego.on('message', message => {
@@ -18,6 +18,10 @@ lego.on('message', message => {
  let args = message.content.split(" ").slice(1);
 
  // list of shit
+ if (command === "h") {
+   message.channel.sendMessage("say | Adding more to this bot soon! |");
+ }
+ 
  if (command === "say") {
    message.channel.sendMessage(args.join(" "));
  }
