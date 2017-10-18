@@ -3,7 +3,7 @@ const lego = new Discord.Client();
 
 lego.login(process.env.BOT_TOKEN);
 
-client.on('message', message => {
+lego.on('message', message => {
   if (!message.guild) return;
 
   if (message.content === '+join') {
