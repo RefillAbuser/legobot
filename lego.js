@@ -7,6 +7,7 @@ lego.on('ready', () => {
 });
 
 bot.user.setPresence({game: {name: 'a bot that gives no fucks', type:0 } });
+
 // Prefix settings
 bot.on('message', message => {
  if(message.author.bot) return;
@@ -20,6 +21,7 @@ lego.on('message', message => {
   if (message.content === 'ping') {
     message.reply('Pong!');
   }
+  
 });
 
 lego.login(process.env.BOT_TOKEN);
