@@ -30,6 +30,10 @@ lego.on('message', message => {
    message.channel.sendMessage(args.join(" "));
  }
 
+ if (command === "idk") {
+   message.channel.sendMmessage.channel.sendMessage("I really don't know... | I'ma worthless bot |");
+  }
+
 });
  // Login Token
 lego.login(process.env.BOT_TOKEN);
