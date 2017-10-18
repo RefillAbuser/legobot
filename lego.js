@@ -5,7 +5,7 @@ const config = require("./config.json");
 lego.on('ready', () => {
   console.log(`Logged in as ${lego.user.tag}!`);
 
-bot.user.setPresence({game: {name: 'prefix: == | ==help', type:0 } });
+bot.user.setPresence({game: {name: 'worthless bot', type:0 } });
 });
 });
 // Prefix settings
