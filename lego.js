@@ -29,10 +29,10 @@ lego.on('message', message => {
  if (command === "say") {
    message.channel.sendMessage(args.join(" "));
  }
-
- if (command === "idk") {
-   message.channel.sendMmessage.channel.sendMessage("I really don't know... | I'ma worthless bot |");
-  }
+ 
+  if (command === "wtf") {
+   message.channel.sendMessage("no");
+ }
 
 });
  // Login Token
