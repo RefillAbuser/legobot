@@ -8,7 +8,7 @@ lego.on('ready', () => {
  console.log(`Logged in as ${lego.user.tag}!`);
  
 // Shows what the bot is playing
-lego.user.setPresence({game: {name: '| prefix: +h | Worthless bot |', type:0 } });
+lego.user.setPresence({game: {name: '| prefix: +h | Dead Lego |', type:0 } });
 });
 
 // Prefix settings
