@@ -8,7 +8,7 @@ lego.on('ready', () => {
  console.log(`Logged in as ${lego.user.tag}!`);
  
 // Shows what the bot is playing
-lego.user.setPresence({game: {name: '| prefix: +h | Dead Lego |', type:0 } });
+lego.user.setPresence({game: {name: 'prefix: +h', type:0 } });
 });
 
 // Prefix settings
@@ -21,17 +21,14 @@ lego.on('message', message => {
  let args = message.content.split(" ").slice(1);
 
  // list of shit
- 
- if (command === "h") {
-   message.channel.sendMessage("`commands` +h - +say - +info | Adding more to this bot soon! |");
- }
- 
- if (command === "say") {
-   message.channel.sendMessage(args.join(" "));
- }
-
- if (command === "info") {
-   message.channel.sendMessage("+serverinfo coming soon!");
+  if (command === "h") {
+    let modRole = message.guild.roles.find("name", "Member");
+    if(message.member.roles.has(modRole.id)) {
+    message.author.sendMessage("```ccs message.author.sendMessage```");
+    message.reply("Sent!");
+    } else {
+     message.reply("Need the Member role applyed to your account!");
+   }
  }
  
 });
