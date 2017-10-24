@@ -31,6 +31,13 @@ lego.on('message', message => {
    }
  }
  
+ if (command === "test") {
+  embed=discord.Embed(title="test", url='https://cog-creators.github.io/discord-embed-sandbox/', description="test")
+  embed.set_author(name="test", url='https://cog-creators.github.io/discord-embed-sandbox/')
+  embed.set_footer(text="yrdy")
+ }
+  
+ 
 });
  // Login Token
 lego.login(process.env.BOT_TOKEN);
